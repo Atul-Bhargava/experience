@@ -1,0 +1,19 @@
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: 127.0.0.1:9092
+      auto-offset-reset: earliest
+    producer:
+      group-id: group_id
+
+
+topic:
+  name:
+    consumer: test.user.events
+
+server:
+  port: 8081
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-exception: false
